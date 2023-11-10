@@ -5,6 +5,109 @@
 }
 
 
+body{
+    position: relative;
+    background-color: #E3E6E6;
+}
+
+
+
+
+/*sidebar*/
+.cross-div{
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    width: 0px; /*390px*/
+    margin-top: 10px;
+    transition: 0.2s;
+    
+}
+
+    
+
+.cross img{
+    width: 25px;
+}
+   
+.sidebar{
+    background-color: #e1d9d9;
+    position: fixed;
+    width: 0px ; /*365px*/
+    height: 100%;
+    overflow-y: auto;
+    transition: 0.2s;
+}
+
+.customer-profile{
+    width: 365px;
+    display: flex;
+    background-color: #222f3d;
+    height: 50px;
+    align-items: center;
+}
+
+.customer-profile-left{
+    margin: 0 10px 0 36px;
+    background-position: -137px -340px;
+}
+
+
+.customer-profile-right{
+   font-size: 19px ;
+   color: #fff;
+}
+
+
+.content-item{
+    font-size:14px;
+    padding: 13px 20px 13px 36px;
+}
+
+.content-title{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 13px 20px 5px 36px;
+}
+
+.content-item-compress-section{
+    padding: 13px 20px 13px 36px;
+}
+
+li{
+    height: 43px;
+}
+
+.sidebar-content{
+    width: 365px;
+    font-size: 14px;
+    background-color: #fff;
+    display: flex;
+    
+
+}
+
+.content-separator{
+    width:365px;
+    padding: 0px;
+    border-bottom: 1px  #d5dbdb;
+    margin: 5px 0;
+    
+}
+ul{
+    list-style-type: none;
+}
+
+
+.sidebar-content-visible{
+   padding-left: 0px;
+}
+
+
+
+
+/*navbar*/
+
 .nav-belt{
     height: 60px;
     background-color: #0f1111;
@@ -26,7 +129,6 @@
     background-size: cover;
     height: 50px;
     width: 100px;
-    /* padding: 1px 8px 0 6px; */
 }
 
 
@@ -41,9 +143,6 @@
 
 /**box-2**/
 
-/* .nav-global-location{
-    padding: 0 8px 0 18px;
-} */
 .address-line1{
 color:#cccccc;
 font-size: .80rem;
@@ -148,6 +247,7 @@ span{
 
 .nav-main-all{
     padding-block: 10px;
+    cursor: pointer;
 }
 .nav-main-options p{
     display: inline;
@@ -162,25 +262,186 @@ span{
 }
 
 
-/**slider-box**/
+    
+/*slider-box*/
 
 
 .slider-box{
-    background-image:url("Hero_img1.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 600px;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-   
 }
 .slider-box img{
-   
+    width: 1500px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto; 
+
 }
 
-.Slider-box-msg{
-    
+
+
+    /* page content */
+
+
+ .pagecontent{
+    /* position: relative; */
+   
 }
-    
+
+
+.pagecontent-text-note{
+   background-color: white;
+   width: 1460px;
+   height: 40px;
+   border: 1px solid;
+   text-align: center;
+   margin:  auto;
+  
+}
+
+
+.pagecontent-text-note p{
+   margin:10px;
+}
+
+.pagecontent-layout{
+   width: 100%; 
+   /* position: absolute; */
+   top: 230px;
+   
+}
+.pagecontent-item-boxs{
+    flex-wrap: wrap;
+    width: 1858px;
+    height: 860px;
+    margin: 0px auto;
+    padding:20px 20px;
+}
+
+.grid-box-1st{
+   display: flex;
+   justify-content: space-between;
+   width: 1480px;
+   height: 420px;
+   margin: 0px auto;
+}
+
+
+.grid-box-2nd{
+   display: flex;
+   justify-content: space-between;
+   width: 1480px;
+   height: 420px;
+   border: 0px solid black;
+   margin: 0px auto;
+  
+}
+
+.grid-box{
+   width: 350px;
+   height: 420px;
+   background-color: antiquewhite;
+   /* margin-right: 10px; */
+   
+}
+
+hr{
+   width: 1460px;
+   height: 20px;
+   margin: 0 auto;
+}
+
+
+.cardInstance{
+   width: 1480px;
+   height: 366px;
+   background-color: antiquewhite;
+   margin: 0px auto;
+   
+}
+
+         /*Footor*/
+
+
+.footer-container{
+ 
+}
+
+.back-top{
+   height: 49px;
+   background-color: #374754;
+}  
+
+.back-top span{
+   display: block;
+   text-align: center;
+   padding: 15px 0px;
+   font-size: 13px;
+   color: #fff;
+}
+
+
+.Footer-accessibility{
+   height: 318PX;
+   background-color: #232F3F;
+}
+
+.currency-country{
+   height: 68px;
+   background-color: #232F3F;
+}
+
+
+.Footor-Descline{
+   height: 394px;
+   background-color: #131A22;
+}
+
+.Footer-Descline-Table{
+   width: 1000px;
+   margin: 0px auto;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.Copyright{
+   height: 77px;
+   background-color: #131A22;
+}
+
+
+.Copyright span{
+   display: block;
+   text-align: center;
+   color: #fff;
+   font-size: 12px;
+}
+
+
+
+.Copyright ul li{
+   /* word-wrap: break-word; */
+   display: inline;
+   text-align: center;
+   color: #fff;
+   font-size: 12px;
+   padding: 0px 7.2px;
+   margin: 0px auto;
+  
+}
+
+.Copyright ul{
+   width: 400px;
+}
+ul{
+   margin: 0px auto;
+}
+
+
+
+
+.Footor-Descline{
+   color: #fff;
+   
+}
+
+
